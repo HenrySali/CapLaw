@@ -1,55 +1,55 @@
 /* Felipe Salinas - Legal Consultant Website */
-/* Palette: "Quiet Teal" - Modern Professional */
+/* Palette: Dark Charcoal + Gold — Authority & Premium */
 
-/* ===== CSS Variables - Light Theme (default) ===== */
+/* ===== CSS Variables - Dark Theme (default) ===== */
 :root,
-[data-theme="light"] {
-  --color-bg: #FFFFFF;
-  --color-bg-alt: #F5F0EB;
-  --color-text: #1A2332;
-  --color-text-secondary: #5A6B7A;
-  --color-accent: #4A8B8C;
-  --color-accent-hover: #357374;
-  --color-accent-light: rgba(74, 139, 140, 0.08);
-  --color-border: #E8E2DB;
-  --color-card: #FFFFFF;
-  --color-card-hover: #FDFCFA;
-  --color-input-bg: #FFFFFF;
-  --color-input-border: #D9D2CA;
-  --color-nav-bg: rgba(255, 255, 255, 0.92);
-  --color-nav-text: #1A2332;
-  --color-footer-bg: #1A2332;
-  --color-footer-text: rgba(255, 255, 255, 0.7);
+[data-theme="dark"] {
+  --color-bg: #0C0F14;
+  --color-bg-alt: #131820;
+  --color-text: #E8E6E3;
+  --color-text-secondary: #9A9590;
+  --color-accent: #B8860B;
+  --color-accent-hover: #D4A842;
+  --color-accent-light: rgba(184, 134, 11, 0.1);
+  --color-border: #252A33;
+  --color-card: #161B24;
+  --color-card-hover: #1C2230;
+  --color-input-bg: #161B24;
+  --color-input-border: #2E3440;
+  --color-nav-bg: rgba(12, 15, 20, 0.95);
+  --color-nav-text: #E8E6E3;
+  --color-footer-bg: #080A0E;
+  --color-footer-text: rgba(255, 255, 255, 0.6);
   --font-heading: 'Instrument Serif', Georgia, serif;
   --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --shadow-sm: 0 1px 3px rgba(26, 35, 50, 0.06);
-  --shadow-md: 0 8px 30px rgba(26, 35, 50, 0.08);
-  --shadow-lg: 0 20px 60px rgba(26, 35, 50, 0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
   --radius: 12px;
   --radius-sm: 8px;
 }
 
-/* ===== Dark Theme ===== */
-[data-theme="dark"] {
-  --color-bg: #0F1419;
-  --color-bg-alt: #1A2332;
-  --color-text: #E8ECF0;
-  --color-text-secondary: #8899A6;
-  --color-accent: #5DB8B9;
-  --color-accent-hover: #7CCECF;
-  --color-accent-light: rgba(93, 184, 185, 0.1);
-  --color-border: #2C3A4A;
-  --color-card: #1A2332;
-  --color-card-hover: #1F2937;
-  --color-input-bg: #1A2332;
-  --color-input-border: #374151;
-  --color-nav-bg: rgba(15, 20, 25, 0.92);
-  --color-nav-text: #E8ECF0;
-  --color-footer-bg: #0A0E13;
-  --color-footer-text: rgba(255, 255, 255, 0.6);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+/* ===== Light Theme ===== */
+[data-theme="light"] {
+  --color-bg: #FAFAFA;
+  --color-bg-alt: #F0EDE8;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-accent: #8B6914;
+  --color-accent-hover: #6B4F0D;
+  --color-accent-light: rgba(139, 105, 20, 0.08);
+  --color-border: #D4CFC7;
+  --color-card: #FFFFFF;
+  --color-card-hover: #F9F7F4;
+  --color-input-bg: #FFFFFF;
+  --color-input-border: #C8C2BA;
+  --color-nav-bg: rgba(250, 250, 250, 0.95);
+  --color-nav-text: #1A1A1A;
+  --color-footer-bg: #1A1A1A;
+  --color-footer-text: rgba(255, 255, 255, 0.65);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== Reset & Base ===== */
@@ -120,7 +120,7 @@ h1, h2, h3 {
   height: 38px;
   border-radius: 10px;
   background: var(--color-accent);
-  color: #fff;
+  color: #0C0F14;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,10 +161,10 @@ h1, h2, h3 {
 
 .nav-cta {
   background: var(--color-accent) !important;
-  color: #fff !important;
+  color: #0C0F14 !important;
   padding: 0.55rem 1.3rem;
   border-radius: var(--radius-sm);
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   transition: all 0.3s !important;
 }
 
@@ -205,10 +205,10 @@ h1, h2, h3 {
   height: 16px;
 }
 
-[data-theme="light"] .icon-sun { display: none; }
-[data-theme="light"] .icon-moon { display: block; }
 [data-theme="dark"] .icon-sun { display: block; }
 [data-theme="dark"] .icon-moon { display: none; }
+[data-theme="light"] .icon-sun { display: none; }
+[data-theme="light"] .icon-moon { display: block; }
 
 .lang-toggle {
   font-size: 0.7rem;
@@ -248,7 +248,7 @@ h1, h2, h3 {
   right: -20%;
   width: 60%;
   height: 120%;
-  background: radial-gradient(ellipse, var(--color-accent-light) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(184, 134, 11, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -306,11 +306,11 @@ h1, h2, h3 {
   align-items: center;
   gap: 0.5rem;
   background: var(--color-accent);
-  color: #fff;
+  color: #0C0F14;
   padding: 0.9rem 1.8rem;
   border-radius: var(--radius-sm);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   transition: all 0.3s;
   border: none;
@@ -388,7 +388,7 @@ h1, h2, h3 {
   height: 70px;
   border-radius: 50%;
   background: var(--color-accent);
-  color: #fff;
+  color: #0C0F14;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -954,8 +954,8 @@ h1, h2, h3 {
 
 .calendar-days .day.selected {
   background: var(--color-accent);
-  color: #fff;
-  font-weight: 600;
+  color: #0C0F14;
+  font-weight: 700;
 }
 
 .calendar-days .day.disabled {
@@ -1021,9 +1021,9 @@ h1, h2, h3 {
 
 .time-slot.selected {
   background: var(--color-accent);
-  color: #fff;
+  color: #0C0F14;
   border-color: var(--color-accent);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .btn-book {

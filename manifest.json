@@ -4,8 +4,8 @@
   "description": "Consultoría jurídica online Colombia-España",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#4A8B8C",
+  "background_color": "#0C0F14",
+  "theme_color": "#0C0F14",
   "orientation": "portrait-primary",
   "icons": [
     {
