@@ -152,11 +152,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  document.querySelectorAll('.service-card, .step-card, .testimonial-card, .faq-item, .credential, .about-stat').forEach((el, i) => {
+  document.querySelectorAll('.service-card, .step-card, .testimonial-card, .faq-item, .credential, .about-stat, .especialidad-card').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = `opacity 0.5s ease ${i * 0.05}s, transform 0.5s ease ${i * 0.05}s`;
     observer.observe(el);
+  });
+
+  // ============================================
+  // ESPECIALIDAD CTA → PRE-SELECT TOPIC
+  // ============================================
+  document.querySelectorAll('.especialidad-cta').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const topic = link.getAttribute('data-topic');
+      if (topic) {
+        const bookTopic = document.getElementById('bookTopic');
+        if (bookTopic) {
+          bookTopic.value = topic;
+        }
+      }
+    });
+  });
+
+  // ============================================
+  // CASOS REALES ACCORDION
+  // ============================================
+  document.querySelectorAll('.caso-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const jurisdiccion = btn.parentElement;
+      const isOpen = jurisdiccion.classList.contains('open');
+      // Close other jurisdicciones within the same card
+      const card = jurisdiccion.closest('.especialidad-card');
+      card.querySelectorAll('.casos-jurisdiccion').forEach(j => j.classList.remove('open'));
+      if (!isOpen) {
+        jurisdiccion.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
   });
 
   // ============================================
