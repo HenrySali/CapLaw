@@ -69,6 +69,7 @@ h1,h2,h3{font-family:var(--font-heading);color:var(--color-text);line-height:1.1
 .nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none}
 .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--gradient-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.85rem;letter-spacing:1px;box-shadow:var(--shadow-accent)}
+.logo-img{width:40px;height:40px;border-radius:10px;box-shadow:var(--shadow-accent)}
 .logo-text{font-family:var(--font-heading);font-size:1.25rem;color:var(--color-text)}
 .nav-links{display:flex;list-style:none;gap:2rem;align-items:center}
 .nav-links a{text-decoration:none;color:var(--color-text-secondary);font-size:0.85rem;font-weight:500;letter-spacing:0.3px;transition:color 0.3s}
@@ -114,6 +115,10 @@ h1,h2,h3{font-family:var(--font-heading);color:var(--color-text);line-height:1.1
 .hero-card-avatar{width:72px;height:72px;border-radius:50%;background:var(--gradient-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;box-shadow:var(--shadow-accent)}
 .hero-card-info h3{font-size:1.15rem;margin-bottom:0.2rem}
 .hero-card-info p{color:var(--color-text-secondary);font-size:0.82rem;margin-bottom:1rem}
+.hero-card-role{color:var(--color-accent)!important;font-weight:600;font-size:0.78rem!important;text-transform:uppercase;letter-spacing:0.8px}
+.hero-card-degrees{display:flex;flex-direction:column;gap:0.45rem;margin-bottom:1rem;padding:0.75rem;background:rgba(14,165,233,0.04);border:1px solid rgba(14,165,233,0.1);border-radius:var(--radius-sm)}
+.degree-item{display:flex;align-items:center;gap:0.5rem;font-size:0.72rem;color:var(--color-text-secondary);font-weight:500}
+.degree-item svg{stroke:var(--color-accent);flex-shrink:0;opacity:0.8}
 .hero-card-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.5rem}
 .hero-card-tags span{background:var(--color-accent-light);color:var(--color-accent);padding:0.2rem 0.65rem;border-radius:4px;font-size:0.7rem;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;border:1px solid rgba(14,165,233,0.15)}
 .hero-card-status{display:flex;align-items:center;gap:0.5rem;font-size:0.78rem;color:var(--color-text-secondary);padding-top:1.25rem;border-top:1px solid var(--color-border)}

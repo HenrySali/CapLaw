@@ -1,22 +1,27 @@
 {
-  "name": "Felipe Salinas - Consultoría Jurídica",
-  "short_name": "FS Legal",
-  "description": "Consultoría jurídica online Colombia-España",
-  "start_url": "/index.html",
+  "name": "CapLaw - Consultoría Jurídica Internacional",
+  "short_name": "CapLaw",
+  "description": "Dr. Felipe Salinas · Consultoría jurídica online Colombia-España. Derecho penal, civil, laboral, compliance y extranjería.",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "background_color": "#0C0F14",
-  "theme_color": "#0C0F14",
+  "background_color": "#0F172A",
+  "theme_color": "#0EA5E9",
   "orientation": "portrait-primary",
+  "categories": ["business", "education"],
+  "lang": "es",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "img/icon-192.svg",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/svg+xml",
+      "purpose": "any"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "img/icon-512.svg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ]
 }

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" rx="38" fill="#0F172A"/>
+  <rect x="4" y="4" width="184" height="184" rx="34" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <!-- Balance -->
+  <rect x="93" y="40" width="6" height="50" rx="3" fill="#0EA5E9"/>
+  <circle cx="96" cy="37" r="5" fill="#0EA5E9"/>
+  <rect x="54" y="46" width="84" height="4" rx="2" fill="#38BDF8"/>
+  <line x1="58" y1="50" x2="58" y2="66" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="74" y1="50" x2="74" y2="66" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M 52 66 C 52 66, 58 71, 66 71 C 74 71, 80 66, 80 66" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="118" y1="50" x2="118" y2="66" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="134" y1="50" x2="134" y2="66" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M 112 66 C 112 66, 118 71, 126 71 C 134 71, 140 66, 140 66" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round"/>
+  <rect x="82" y="88" width="28" height="4" rx="2" fill="#0EA5E9"/>
+  <!-- Text -->
+  <text x="48" y="130" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#FFFFFF">Cap</text>
+  <text x="108" y="130" font-family="Georgia, serif" font-size="32" font-weight="700" fill="#FFFFFF">Law</text>
+  <line x1="48" y1="136" x2="96" y2="136" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="108" y1="136" x2="158" y2="136" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="96" y="160" font-family="sans-serif" font-size="10" fill="#64748B" text-anchor="middle" letter-spacing="2">CONSULTORÍA JURÍDICA</text>
+</svg>

@@ -1,11 +1,15 @@
 // CapLaw Service Worker - Offline-first PWA
-const CACHE_NAME = 'caplaw-v1';
+const CACHE_NAME = 'caplaw-v2';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/css/styles.css',
-  '/js/main.js',
-  '/manifest.json'
+  './',
+  './index.html',
+  './css/styles.css',
+  './js/main.js',
+  './manifest.json',
+  './img/logo-navbar.svg',
+  './img/logo-caplaw.svg',
+  './img/icon-192.svg',
+  './img/icon-512.svg'
 ];
 
 // Install
@@ -17,7 +21,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Activate
+// Activate - clean old caches
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {

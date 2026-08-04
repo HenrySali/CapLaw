@@ -104,18 +104,18 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo">
-        <span class="logo-mark">FS</span>
-        <span class="logo-text">Felipe Salinas</span>
+        <img src="img/logo-navbar.svg" alt="CapLaw" class="logo-img" width="40" height="40">
+        <span class="logo-text">CapLaw</span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre Mí</a></li>
-        <li><a href="#especializaciones">Especialización</a></li>
-        <li><a href="#servicios-espana">España</a></li>
-        <li><a href="#servicios-colombia">Colombia</a></li>
-        <li><a href="#como-funciona">Proceso</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#agendar" class="nav-cta">Agendar Consulta</a></li>
+        <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+        <li><a href="#sobre-mi" data-i18n="nav.sobremi">Sobre Mí</a></li>
+        <li><a href="#especializaciones" data-i18n="nav.especializacion">Especialización</a></li>
+        <li><a href="#servicios-espana" data-i18n="nav.espana">España</a></li>
+        <li><a href="#servicios-colombia" data-i18n="nav.colombia">Colombia</a></li>
+        <li><a href="#como-funciona" data-i18n="nav.proceso">Proceso</a></li>
+        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="#agendar" class="nav-cta" data-i18n="nav.cta">Agendar Consulta</a></li>
       </ul>
       <div class="nav-actions">
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
@@ -154,15 +154,15 @@
         <div class="hero-trust">
           <div class="trust-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>2 Másteres en España</span>
+            <span data-i18n="hero.trust1">2 Másteres en España</span>
           </div>
           <div class="trust-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>Tarjeta Profesional de Abogado</span>
+            <span data-i18n="hero.trust2">Tarjeta Profesional de Abogado</span>
           </div>
           <div class="trust-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            <span>Consulta 100% Online</span>
+            <span data-i18n="hero.trust3">Consulta 100% Online</span>
           </div>
         </div>
       </div>
@@ -170,19 +170,29 @@
         <div class="hero-card">
           <div class="hero-card-avatar">FS</div>
           <div class="hero-card-info">
-            <h3>Felipe Salinas</h3>
-            <p>Abogado Máster · Consultor Jurídico Internacional</p>
+            <h3 data-i18n="hero.card.name">Dr. Felipe Salinas</h3>
+            <p class="hero-card-role" data-i18n="hero.card.role">Abogado · Consultor Jurídico Internacional</p>
+            <div class="hero-card-degrees">
+              <div class="degree-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14v7"/><path d="M5 9.5v5.5a7 7 0 0014 0V9.5"/></svg>
+                <span data-i18n="hero.card.degree1">Máster en Abogacía — UMA</span>
+              </div>
+              <div class="degree-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14v7"/><path d="M5 9.5v5.5a7 7 0 0014 0V9.5"/></svg>
+                <span data-i18n="hero.card.degree2">Máster en Derecho Penal y Política Criminal — UMA</span>
+              </div>
+            </div>
             <div class="hero-card-tags">
-              <span>Penal</span>
-              <span>Civil</span>
-              <span>Extranjería</span>
-              <span>Empresa</span>
-              <span>Compliance</span>
+              <span data-i18n="hero.card.tag1">Penal</span>
+              <span data-i18n="hero.card.tag2">Civil</span>
+              <span data-i18n="hero.card.tag3">Extranjería</span>
+              <span data-i18n="hero.card.tag4">Empresa</span>
+              <span data-i18n="hero.card.tag5">Compliance</span>
             </div>
           </div>
           <div class="hero-card-status">
             <span class="status-dot"></span>
-            Disponible para consultas
+            <span data-i18n="hero.card.status">Disponible para consultas</span>
           </div>
         </div>
       </div>
@@ -195,7 +205,7 @@
       <div class="about-grid">
         <div class="about-content">
           <span class="section-label" data-i18n="about.label">Sobre Mí</span>
-          <h2 data-i18n="about.title">Formación internacional,<br>enfoque práctico</h2>
+          <h2 data-i18n="about.title">Formación internacional, enfoque práctico</h2>
           <p data-i18n="about.desc1">Soy abogado colombiano con Tarjeta Profesional activa y dos maestrías cursadas en la Universidad de Málaga, España. Esta combinación me permite entender las necesidades jurídicas tanto del contexto colombiano como del europeo.</p>
           <p data-i18n="about.desc2">Mi modelo de trabajo es simple: consultorías online donde evalúo tu caso, te doy un diagnóstico claro y te acompaño en la solución — ya sea directamente o a través de mi red de abogados aliados en Colombia para procesos que requieran presencia física.</p>
           <div class="about-credentials">
@@ -204,8 +214,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
               </div>
               <div>
-                <strong>Máster en Abogacía</strong>
-                <span>Universidad de Málaga</span>
+                <strong data-i18n="about.cred1.title">Máster en Abogacía</strong>
+                <span data-i18n="about.cred1.subtitle">Universidad de Málaga</span>
               </div>
             </div>
             <div class="credential">
@@ -213,8 +223,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
               </div>
               <div>
-                <strong>Máster en Derecho Penal y Ciencias Penales</strong>
-                <span>Universidad de Málaga</span>
+                <strong data-i18n="about.cred2.title">Máster en Derecho Penal y Ciencias Penales</strong>
+                <span data-i18n="about.cred2.subtitle">Universidad de Málaga</span>
               </div>
             </div>
             <div class="credential">
@@ -222,8 +232,8 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
               </div>
               <div>
-                <strong>Abogado Titulado</strong>
-                <span>Tarjeta Profesional — Colombia</span>
+                <strong data-i18n="about.cred3.title">Abogado Titulado</strong>
+                <span data-i18n="about.cred3.subtitle">Tarjeta Profesional — Colombia</span>
               </div>
             </div>
           </div>
@@ -231,16 +241,16 @@
         <div class="about-visual">
           <div class="about-stats">
             <div class="about-stat">
-              <span class="about-stat-number">2</span>
-              <span class="about-stat-label">Másteres en España</span>
+              <span class="about-stat-number" data-i18n="about.stat1.number">2</span>
+              <span class="about-stat-label" data-i18n="about.stat1.label">Másteres en España</span>
             </div>
             <div class="about-stat">
-              <span class="about-stat-number">2</span>
-              <span class="about-stat-label">Jurisdicciones</span>
+              <span class="about-stat-number" data-i18n="about.stat2.number">2</span>
+              <span class="about-stat-label" data-i18n="about.stat2.label">Jurisdicciones</span>
             </div>
             <div class="about-stat">
-              <span class="about-stat-number">100%</span>
-              <span class="about-stat-label">Online</span>
+              <span class="about-stat-number" data-i18n="about.stat3.number">100%</span>
+              <span class="about-stat-label" data-i18n="about.stat3.label">Online</span>
             </div>
           </div>
         </div>
@@ -252,366 +262,366 @@
   <section class="section section-alt" id="especializaciones">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Áreas de Especialización</span>
-        <h2>Formación de Máster aplicada a tu caso</h2>
-        <p>Cada área de asesoría está respaldada por formación especializada de posgrado en la Universidad de Málaga. No es teoría: es criterio profesional con fundamento académico.</p>
+        <span class="section-label" data-i18n="esp.label">Áreas de Especialización</span>
+        <h2 data-i18n="esp.title">Formación de Máster aplicada a tu caso</h2>
+        <p data-i18n="esp.desc">Cada área de asesoría está respaldada por formación especializada de posgrado en la Universidad de Málaga. No es teoría: es criterio profesional con fundamento académico.</p>
       </div>
       <div class="especialidades-grid">
 
         <!-- Card destacada: Cooperación Internacional -->
         <div class="especialidad-card especialidad-featured">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-penal">M. Derecho Penal</span>
-            <span class="especialidad-featured-tag">Diferenciador único</span>
+            <span class="especialidad-badge badge-penal" data-i18n="esp.card1.badge">M. Derecho Penal</span>
+            <span class="especialidad-featured-tag" data-i18n="esp.card1.featured">Diferenciador único</span>
           </div>
-          <h3>Cooperación Judicial Internacional</h3>
-          <p class="especialidad-materia">Asignatura: Cooperación judicial penal internacional</p>
-          <p>Asesoría en procesos que cruzan fronteras entre Colombia y España.</p>
+          <h3 data-i18n="esp.card1.title">Cooperación Judicial Internacional</h3>
+          <p class="especialidad-materia" data-i18n="esp.card1.materia">Asignatura: Cooperación judicial penal internacional</p>
+          <p data-i18n="esp.card1.desc">Asesoría en procesos que cruzan fronteras entre Colombia y España.</p>
           <ul class="especialidad-casos">
-            <li>Extradiciones y euroórdenes</li>
-            <li>Asistencia judicial entre Colombia y España</li>
-            <li>Defensa penal con elemento transnacional</li>
-            <li>Traslado de personas condenadas</li>
+            <li data-i18n="esp.card1.li1">Extradiciones y euroórdenes</li>
+            <li data-i18n="esp.card1.li2">Asistencia judicial entre Colombia y España</li>
+            <li data-i18n="esp.card1.li3">Defensa penal con elemento transnacional</li>
+            <li data-i18n="esp.card1.li4">Traslado de personas condenadas</li>
           </ul>
           <!-- Casos Reales por Jurisdicción -->
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card1.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Euroorden contra colombiano residente en Málaga</h4>
-                  <p>Un colombiano con residencia legal en España recibió una orden europea de detención emitida por Italia por presunto fraude. Se evaluó la proporcionalidad bajo el marco de la Decisión Marco 2002/584/JAI y se interpuso recurso ante la Audiencia Nacional argumentando arraigo y doble incriminación.</p>
+                  <h4 data-i18n="esp.card1.caso.es.1.title">Euroorden contra colombiano residente en Málaga</h4>
+                  <p data-i18n="esp.card1.caso.es.1.desc">Un colombiano con residencia legal en España recibió una orden europea de detención emitida por Italia por presunto fraude. Se evaluó la proporcionalidad bajo el marco de la Decisión Marco 2002/584/JAI y se interpuso recurso ante la Audiencia Nacional argumentando arraigo y doble incriminación.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Solicitud de traslado de persona condenada España → Colombia</h4>
-                  <p>Ciudadano colombiano condenado en España por delito de tráfico de drogas (art. 368 CP español) solicitó cumplir condena en Colombia al amparo del Convenio de Estrasburgo sobre traslado de personas condenadas. Se gestionó el expediente ante el Ministerio de Justicia español.</p>
+                  <h4 data-i18n="esp.card1.caso.es.2.title">Solicitud de traslado de persona condenada España → Colombia</h4>
+                  <p data-i18n="esp.card1.caso.es.2.desc">Ciudadano colombiano condenado en España por delito de tráfico de drogas (art. 368 CP español) solicitó cumplir condena en Colombia al amparo del Convenio de Estrasburgo sobre traslado de personas condenadas. Se gestionó el expediente ante el Ministerio de Justicia español.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card1.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Extradición solicitada por EE.UU. con defensa desde España</h4>
-                  <p>Familiar de un colombiano solicitado en extradición por la Corte del Distrito Sur de Florida contactó desde Málaga. Se coordinó con abogado penalista en Bogotá para interponer recursos ante la Sala Penal de la Corte Suprema de Justicia (Ley 906/2004, art. 490 y ss.), mientras se preparaba documentación de arraigo desde España.</p>
+                  <h4 data-i18n="esp.card1.caso.co.1.title">Extradición solicitada por EE.UU. con defensa desde España</h4>
+                  <p data-i18n="esp.card1.caso.co.1.desc">Familiar de un colombiano solicitado en extradición por la Corte del Distrito Sur de Florida contactó desde Málaga. Se coordinó con abogado penalista en Bogotá para interponer recursos ante la Sala Penal de la Corte Suprema de Justicia (Ley 906/2004, art. 490 y ss.), mientras se preparaba documentación de arraigo desde España.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Asistencia judicial internacional para prueba documental</h4>
-                  <p>Empresa colombiana necesitaba documentos certificados en España para proceso penal en Bogotá. Se tramitó carta rogatoria vía autoridad central bajo el Tratado Bilateral de Asistencia Judicial entre Colombia y España, garantizando la cadena de custodia probatoria (arts. 254-266 CPP colombiano).</p>
+                  <h4 data-i18n="esp.card1.caso.co.2.title">Asistencia judicial internacional para prueba documental</h4>
+                  <p data-i18n="esp.card1.caso.co.2.desc">Empresa colombiana necesitaba documentos certificados en España para proceso penal en Bogotá. Se tramitó carta rogatoria vía autoridad central bajo el Tratado Bilateral de Asistencia Judicial entre Colombia y España, garantizando la cadena de custodia probatoria (arts. 254-266 CPP colombiano).</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="penal">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="penal" data-i18n="esp.card1.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Compliance y Anticorrupción -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-penal">M. Derecho Penal</span>
+            <span class="especialidad-badge badge-penal" data-i18n="esp.card2.badge">M. Derecho Penal</span>
           </div>
-          <h3>Compliance y Anticorrupción</h3>
-          <p class="especialidad-materia">Asignaturas: Derecho penal y política criminal de la corrupción · Política legislativa penal</p>
-          <p>Prevención de riesgos penales para empresas y directivos.</p>
+          <h3 data-i18n="esp.card2.title">Compliance y Anticorrupción</h3>
+          <p class="especialidad-materia" data-i18n="esp.card2.materia">Asignaturas: Derecho penal y política criminal de la corrupción · Política legislativa penal</p>
+          <p data-i18n="esp.card2.desc">Prevención de riesgos penales para empresas y directivos.</p>
           <ul class="especialidad-casos">
-            <li>Tu empresa necesita un plan de prevención de delitos</li>
-            <li>Investigaciones internas por irregularidades</li>
-            <li>Canal de denuncias y protocolos corporativos</li>
+            <li data-i18n="esp.card2.li1">Tu empresa necesita un plan de prevención de delitos</li>
+            <li data-i18n="esp.card2.li2">Investigaciones internas por irregularidades</li>
+            <li data-i18n="esp.card2.li3">Canal de denuncias y protocolos corporativos</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card2.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Startup tech sin programa de compliance penal</h4>
-                  <p>PYME tecnológica en Valencia con 25 empleados descubrió que un directivo hacía pagos a funcionarios para agilizar licencias. Se diseñó un programa de compliance penal conforme al art. 31 bis del Código Penal español para eximir responsabilidad penal de la persona jurídica, incluyendo canal de denuncias (Ley 2/2023).</p>
+                  <h4 data-i18n="esp.card2.caso.es.1.title">Startup tech sin programa de compliance penal</h4>
+                  <p data-i18n="esp.card2.caso.es.1.desc">PYME tecnológica en Valencia con 25 empleados descubrió que un directivo hacía pagos a funcionarios para agilizar licencias. Se diseñó un programa de compliance penal conforme al art. 31 bis del Código Penal español para eximir responsabilidad penal de la persona jurídica, incluyendo canal de denuncias (Ley 2/2023).</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Investigación interna por fraude contable en SL</h4>
-                  <p>Sociedad limitada en Málaga detectó irregularidades en facturación. Se realizó investigación interna preservando derechos fundamentales de los empleados investigados (art. 18 CE), se documentó la cadena probatoria y se presentó denuncia ante Fiscalía Anticorrupción.</p>
+                  <h4 data-i18n="esp.card2.caso.es.2.title">Investigación interna por fraude contable en SL</h4>
+                  <p data-i18n="esp.card2.caso.es.2.desc">Sociedad limitada en Málaga detectó irregularidades en facturación. Se realizó investigación interna preservando derechos fundamentales de los empleados investigados (art. 18 CE), se documentó la cadena probatoria y se presentó denuncia ante Fiscalía Anticorrupción.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card2.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Empresa con contratos estatales sin programa anticorrupción</h4>
-                  <p>Constructora con contratos de obra pública necesitaba implementar programa de ética empresarial exigido por la Ley 1778/2016 (soborno transnacional). Se diseñó programa de cumplimiento con políticas de regalos, debida diligencia de terceros y reportes a la Superintendencia de Sociedades.</p>
+                  <h4 data-i18n="esp.card2.caso.co.1.title">Empresa con contratos estatales sin programa anticorrupción</h4>
+                  <p data-i18n="esp.card2.caso.co.1.desc">Constructora con contratos de obra pública necesitaba implementar programa de ética empresarial exigido por la Ley 1778/2016 (soborno transnacional). Se diseñó programa de cumplimiento con políticas de regalos, debida diligencia de terceros y reportes a la Superintendencia de Sociedades.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Director financiero acusado de peculado por apropiación</h4>
-                  <p>Directivo de empresa mixta acusado de peculado (art. 397 Código Penal colombiano). Se elaboró estrategia de defensa demostrando que la empresa carecía de controles internos y que no había dolo en la conducta, logrando preclusión en etapa de investigación ante Fiscalía General.</p>
+                  <h4 data-i18n="esp.card2.caso.co.2.title">Director financiero acusado de peculado por apropiación</h4>
+                  <p data-i18n="esp.card2.caso.co.2.desc">Directivo de empresa mixta acusado de peculado (art. 397 Código Penal colombiano). Se elaboró estrategia de defensa demostrando que la empresa carecía de controles internos y que no había dolo en la conducta, logrando preclusión en etapa de investigación ante Fiscalía General.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="empresa">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="empresa" data-i18n="esp.card2.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Derecho Penal Económico -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-penal">M. Derecho Penal</span>
+            <span class="especialidad-badge badge-penal" data-i18n="esp.card3.badge">M. Derecho Penal</span>
           </div>
-          <h3>Delitos Económicos y Fraude</h3>
-          <p class="especialidad-materia">Asignatura: Derecho penal económico</p>
-          <p>Defensa y asesoría en delitos contra el patrimonio y el orden socioeconómico.</p>
+          <h3 data-i18n="esp.card3.title">Delitos Económicos y Fraude</h3>
+          <p class="especialidad-materia" data-i18n="esp.card3.materia">Asignatura: Derecho penal económico</p>
+          <p data-i18n="esp.card3.desc">Defensa y asesoría en delitos contra el patrimonio y el orden socioeconómico.</p>
           <ul class="especialidad-casos">
-            <li>Te acusan de estafa, apropiación indebida o insolvencia punible</li>
-            <li>Delitos fiscales y tributarios</li>
-            <li>Fraude empresarial o societario</li>
+            <li data-i18n="esp.card3.li1">Te acusan de estafa, apropiación indebida o insolvencia punible</li>
+            <li data-i18n="esp.card3.li2">Delitos fiscales y tributarios</li>
+            <li data-i18n="esp.card3.li3">Fraude empresarial o societario</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card3.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Acusación de estafa por inversión fallida en criptoactivos</h4>
-                  <p>Emprendedor colombiano en Barcelona acusado de estafa (art. 248 CP español) por inversores que perdieron capital en plataforma cripto. Se argumentó ausencia de engaño bastante y se acreditó que la pérdida fue consecuencia del riesgo asumido, no de artificio fraudulento.</p>
+                  <h4 data-i18n="esp.card3.caso.es.1.title">Acusación de estafa por inversión fallida en criptoactivos</h4>
+                  <p data-i18n="esp.card3.caso.es.1.desc">Emprendedor colombiano en Barcelona acusado de estafa (art. 248 CP español) por inversores que perdieron capital en plataforma cripto. Se argumentó ausencia de engaño bastante y se acreditó que la pérdida fue consecuencia del riesgo asumido, no de artificio fraudulento.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Delito fiscal por no declarar rentas obtenidas en Colombia</h4>
-                  <p>Residente fiscal en España omitió declarar ingresos por alquiler de inmuebles en Colombia (modelo 720). Se negoció regularización voluntaria con Agencia Tributaria antes de que se iniciara procedimiento penal por delito contra la Hacienda Pública (art. 305 CP), evitando sanción penal.</p>
+                  <h4 data-i18n="esp.card3.caso.es.2.title">Delito fiscal por no declarar rentas obtenidas en Colombia</h4>
+                  <p data-i18n="esp.card3.caso.es.2.desc">Residente fiscal en España omitió declarar ingresos por alquiler de inmuebles en Colombia (modelo 720). Se negoció regularización voluntaria con Agencia Tributaria antes de que se iniciara procedimiento penal por delito contra la Hacienda Pública (art. 305 CP), evitando sanción penal.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card3.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Denuncia por estafa en compraventa de inmueble</h4>
-                  <p>Comprador pagó la totalidad de un apartamento sobre planos y la constructora nunca entregó. Se presentó denuncia por estafa agravada (art. 246 CP colombiano) ante la Fiscalía General y simultáneamente acción civil de resolución contractual con restitución de dineros.</p>
+                  <h4 data-i18n="esp.card3.caso.co.1.title">Denuncia por estafa en compraventa de inmueble</h4>
+                  <p data-i18n="esp.card3.caso.co.1.desc">Comprador pagó la totalidad de un apartamento sobre planos y la constructora nunca entregó. Se presentó denuncia por estafa agravada (art. 246 CP colombiano) ante la Fiscalía General y simultáneamente acción civil de resolución contractual con restitución de dineros.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Apropiación indebida de socio en SAS</h4>
-                  <p>Socio mayoritario de una SAS en Medellín desvió fondos corporativos a cuentas personales. Se interpuso denuncia penal por abuso de confianza calificado (art. 250 CP colombiano) y medida cautelar de embargo ante el juez civil para proteger el patrimonio social.</p>
+                  <h4 data-i18n="esp.card3.caso.co.2.title">Apropiación indebida de socio en SAS</h4>
+                  <p data-i18n="esp.card3.caso.co.2.desc">Socio mayoritario de una SAS en Medellín desvió fondos corporativos a cuentas personales. Se interpuso denuncia penal por abuso de confianza calificado (art. 250 CP colombiano) y medida cautelar de embargo ante el juez civil para proteger el patrimonio social.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="penal">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="penal" data-i18n="esp.card3.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Violencia de Género -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-penal">M. Derecho Penal</span>
+            <span class="especialidad-badge badge-penal" data-i18n="esp.card4.badge">M. Derecho Penal</span>
           </div>
-          <h3>Violencia de Género</h3>
-          <p class="especialidad-materia">Asignatura: Derecho penal y género</p>
-          <p>Asesoría penal especializada en violencia intrafamiliar y de género.</p>
+          <h3 data-i18n="esp.card4.title">Violencia de Género</h3>
+          <p class="especialidad-materia" data-i18n="esp.card4.materia">Asignatura: Derecho penal y género</p>
+          <p data-i18n="esp.card4.desc">Asesoría penal especializada en violencia intrafamiliar y de género.</p>
           <ul class="especialidad-casos">
-            <li>Órdenes de protección y medidas cautelares</li>
-            <li>Defensa en denuncias por violencia doméstica</li>
-            <li>Acompañamiento a víctimas en el proceso penal</li>
+            <li data-i18n="esp.card4.li1">Órdenes de protección y medidas cautelares</li>
+            <li data-i18n="esp.card4.li2">Defensa en denuncias por violencia doméstica</li>
+            <li data-i18n="esp.card4.li3">Acompañamiento a víctimas en el proceso penal</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card4.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Orden de protección por violencia de género con víctima extranjera</h4>
-                  <p>Mujer colombiana en situación irregular denunció maltrato de su pareja española. Se solicitó orden de protección ante el Juzgado de Violencia sobre la Mujer (Ley Orgánica 1/2004) y simultáneamente autorización de residencia por circunstancias excepcionales (art. 31 bis Ley de Extranjería), permitiéndole regularizar su situación.</p>
+                  <h4 data-i18n="esp.card4.caso.es.1.title">Orden de protección por violencia de género con víctima extranjera</h4>
+                  <p data-i18n="esp.card4.caso.es.1.desc">Mujer colombiana en situación irregular denunció maltrato de su pareja española. Se solicitó orden de protección ante el Juzgado de Violencia sobre la Mujer (Ley Orgánica 1/2004) y simultáneamente autorización de residencia por circunstancias excepcionales (art. 31 bis Ley de Extranjería), permitiéndole regularizar su situación.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Denuncia falsa de violencia de género y defensa del acusado</h4>
-                  <p>Colombiano denunciado por su expareja tras separación conflictiva. Se acreditó mediante prueba digital (mensajes, grabaciones) la ausencia de los elementos típicos del art. 153 CP español, consiguiendo archivo de actuaciones en fase de instrucción.</p>
+                  <h4 data-i18n="esp.card4.caso.es.2.title">Denuncia falsa de violencia de género y defensa del acusado</h4>
+                  <p data-i18n="esp.card4.caso.es.2.desc">Colombiano denunciado por su expareja tras separación conflictiva. Se acreditó mediante prueba digital (mensajes, grabaciones) la ausencia de los elementos típicos del art. 153 CP español, consiguiendo archivo de actuaciones en fase de instrucción.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card4.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Medida de protección por violencia intrafamiliar</h4>
-                  <p>Mujer víctima de violencia psicológica por parte de su cónyuge solicitó medida de protección ante la Comisaría de Familia (Ley 1257/2008). Se acompañó el trámite, se obtuvo medida inmediata de desalojo y se inició proceso penal por violencia intrafamiliar (art. 229 CP colombiano).</p>
+                  <h4 data-i18n="esp.card4.caso.co.1.title">Medida de protección por violencia intrafamiliar</h4>
+                  <p data-i18n="esp.card4.caso.co.1.desc">Mujer víctima de violencia psicológica por parte de su cónyuge solicitó medida de protección ante la Comisaría de Familia (Ley 1257/2008). Se acompañó el trámite, se obtuvo medida inmediata de desalojo y se inició proceso penal por violencia intrafamiliar (art. 229 CP colombiano).</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Incumplimiento de medida de protección con agresión física</h4>
-                  <p>Agresor incumplió medida de alejamiento dictada por Comisaría de Familia. Se denunció ante Fiscalía por el delito autónomo de incumplimiento de medida de protección y se solicitó detención preventiva argumentando peligro para la víctima (art. 308 CPP, Ley 906/2004).</p>
+                  <h4 data-i18n="esp.card4.caso.co.2.title">Incumplimiento de medida de protección con agresión física</h4>
+                  <p data-i18n="esp.card4.caso.co.2.desc">Agresor incumplió medida de alejamiento dictada por Comisaría de Familia. Se denunció ante Fiscalía por el delito autónomo de incumplimiento de medida de protección y se solicitó detención preventiva argumentando peligro para la víctima (art. 308 CPP, Ley 906/2004).</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="penal">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="penal" data-i18n="esp.card4.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Extranjería Penal -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-penal">M. Derecho Penal</span>
-            <span class="especialidad-badge badge-abogacia">M. Abogacía</span>
+            <span class="especialidad-badge badge-penal" data-i18n="esp.card5.badge1">M. Derecho Penal</span>
+            <span class="especialidad-badge badge-abogacia" data-i18n="esp.card5.badge2">M. Abogacía</span>
           </div>
-          <h3>Extranjería Penal</h3>
-          <p class="especialidad-materia">Asignaturas: Política criminal en diversidad cultural y extranjería · Práctica pública especial</p>
-          <p>Cuando un problema migratorio tiene implicaciones penales o viceversa.</p>
+          <h3 data-i18n="esp.card5.title">Extranjería Penal</h3>
+          <p class="especialidad-materia" data-i18n="esp.card5.materia">Asignaturas: Política criminal en diversidad cultural y extranjería · Práctica pública especial</p>
+          <p data-i18n="esp.card5.desc">Cuando un problema migratorio tiene implicaciones penales o viceversa.</p>
           <ul class="especialidad-casos">
-            <li>Expulsión por antecedentes penales</li>
-            <li>Delitos de tráfico de personas</li>
-            <li>Recursos contra denegación de residencia por causas penales</li>
+            <li data-i18n="esp.card5.li1">Expulsión por antecedentes penales</li>
+            <li data-i18n="esp.card5.li2">Delitos de tráfico de personas</li>
+            <li data-i18n="esp.card5.li3">Recursos contra denegación de residencia por causas penales</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card5.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Expulsión administrativa por condena penal cumplida</h4>
-                  <p>Colombiano con 8 años de residencia legal en España recibió orden de expulsión tras condena por delito de lesiones ya cumplida. Se interpuso recurso contencioso-administrativo argumentando arraigo familiar (hijos españoles menores) y proporcionalidad de la medida bajo el art. 57.2 de la Ley de Extranjería y jurisprudencia del TEDH.</p>
+                  <h4 data-i18n="esp.card5.caso.es.1.title">Expulsión administrativa por condena penal cumplida</h4>
+                  <p data-i18n="esp.card5.caso.es.1.desc">Colombiano con 8 años de residencia legal en España recibió orden de expulsión tras condena por delito de lesiones ya cumplida. Se interpuso recurso contencioso-administrativo argumentando arraigo familiar (hijos españoles menores) y proporcionalidad de la medida bajo el art. 57.2 de la Ley de Extranjería y jurisprudencia del TEDH.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Denegación de renovación de residencia por antecedentes</h4>
-                  <p>Extranjero con antecedentes penales cancelados al que le denegaron la renovación de su autorización de residencia. Se demostró ante la Subdelegación del Gobierno que los antecedentes estaban cancelados (art. 136 CP español) y que no representaba amenaza actual para el orden público.</p>
+                  <h4 data-i18n="esp.card5.caso.es.2.title">Denegación de renovación de residencia por antecedentes</h4>
+                  <p data-i18n="esp.card5.caso.es.2.desc">Extranjero con antecedentes penales cancelados al que le denegaron la renovación de su autorización de residencia. Se demostró ante la Subdelegación del Gobierno que los antecedentes estaban cancelados (art. 136 CP español) y que no representaba amenaza actual para el orden público.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card5.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Colombiano deportado desde España necesita certificado para nuevo trámite</h4>
-                  <p>Persona deportada necesitaba gestionar cancelación de la prohibición de entrada al espacio Schengen para iniciar nuevo trámite de visa. Se coordinó desde Colombia la solicitud ante el Consulado español y se preparó documentación de soporte para demostrar cambio de circunstancias.</p>
+                  <h4 data-i18n="esp.card5.caso.co.1.title">Colombiano deportado desde España necesita certificado para nuevo trámite</h4>
+                  <p data-i18n="esp.card5.caso.co.1.desc">Persona deportada necesitaba gestionar cancelación de la prohibición de entrada al espacio Schengen para iniciar nuevo trámite de visa. Se coordinó desde Colombia la solicitud ante el Consulado español y se preparó documentación de soporte para demostrar cambio de circunstancias.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Víctima de trata de personas retornada a Colombia</h4>
-                  <p>Mujer colombiana víctima de trata explotada en España fue retornada sin asistencia. Se gestionó reconocimiento como víctima ante Migración Colombia, acceso a programas de protección (Ley 985/2005) y se exploró la posibilidad de reclamar indemnización ante tribunales españoles mediante asistencia jurídica gratuita.</p>
+                  <h4 data-i18n="esp.card5.caso.co.2.title">Víctima de trata de personas retornada a Colombia</h4>
+                  <p data-i18n="esp.card5.caso.co.2.desc">Mujer colombiana víctima de trata explotada en España fue retornada sin asistencia. Se gestionó reconocimiento como víctima ante Migración Colombia, acceso a programas de protección (Ley 985/2005) y se exploró la posibilidad de reclamar indemnización ante tribunales españoles mediante asistencia jurídica gratuita.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="extranjeria">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="extranjeria" data-i18n="esp.card5.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Propiedad Intelectual -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-penal">M. Derecho Penal</span>
+            <span class="especialidad-badge badge-penal" data-i18n="esp.card6.badge">M. Derecho Penal</span>
           </div>
-          <h3>Propiedad Intelectual e Industrial</h3>
-          <p class="especialidad-materia">Asignatura: Política criminal de la propiedad intelectual e industrial</p>
-          <p>Protección penal de marcas, patentes, software y creaciones originales.</p>
+          <h3 data-i18n="esp.card6.title">Propiedad Intelectual e Industrial</h3>
+          <p class="especialidad-materia" data-i18n="esp.card6.materia">Asignatura: Política criminal de la propiedad intelectual e industrial</p>
+          <p data-i18n="esp.card6.desc">Protección penal de marcas, patentes, software y creaciones originales.</p>
           <ul class="especialidad-casos">
-            <li>Te copiaron la marca o el contenido digital</li>
-            <li>Falsificación y piratería</li>
-            <li>Protección de secretos empresariales</li>
+            <li data-i18n="esp.card6.li1">Te copiaron la marca o el contenido digital</li>
+            <li data-i18n="esp.card6.li2">Falsificación y piratería</li>
+            <li data-i18n="esp.card6.li3">Protección de secretos empresariales</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card6.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Plagio de diseño de producto por competidor en marketplace</h4>
-                  <p>Emprendedor colombiano con marca registrada en la OEPM descubrió que un competidor vendía productos idénticos en Amazon España. Se interpuso denuncia penal por delito contra la propiedad industrial (art. 274 CP español) y simultáneamente se solicitó medida cautelar de retirada del producto ante el Juzgado de lo Mercantil.</p>
+                  <h4 data-i18n="esp.card6.caso.es.1.title">Plagio de diseño de producto por competidor en marketplace</h4>
+                  <p data-i18n="esp.card6.caso.es.1.desc">Emprendedor colombiano con marca registrada en la OEPM descubrió que un competidor vendía productos idénticos en Amazon España. Se interpuso denuncia penal por delito contra la propiedad industrial (art. 274 CP español) y simultáneamente se solicitó medida cautelar de retirada del producto ante el Juzgado de lo Mercantil.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Copia de software desarrollado por freelancer</h4>
-                  <p>Desarrollador freelancer creó aplicación web para cliente español. El cliente reutilizó el código sin autorización para otro proyecto. Se acreditó la titularidad de los derechos de autor sobre el software (Ley de Propiedad Intelectual, art. 96) y se reclamó indemnización por los beneficios obtenidos ilícitamente.</p>
+                  <h4 data-i18n="esp.card6.caso.es.2.title">Copia de software desarrollado por freelancer</h4>
+                  <p data-i18n="esp.card6.caso.es.2.desc">Desarrollador freelancer creó aplicación web para cliente español. El cliente reutilizó el código sin autorización para otro proyecto. Se acreditó la titularidad de los derechos de autor sobre el software (Ley de Propiedad Intelectual, art. 96) y se reclamó indemnización por los beneficios obtenidos ilícitamente.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card6.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Falsificación de marca colombiana en redes sociales</h4>
-                  <p>Marca de moda colombiana registrada ante la SIC detectó cuentas de Instagram vendiendo productos falsificados. Se presentó denuncia penal por usurpación de derechos de propiedad industrial (art. 306 CP colombiano) y se solicitó a Meta la baja de las cuentas infractoras mediante procedimiento de notice and takedown.</p>
+                  <h4 data-i18n="esp.card6.caso.co.1.title">Falsificación de marca colombiana en redes sociales</h4>
+                  <p data-i18n="esp.card6.caso.co.1.desc">Marca de moda colombiana registrada ante la SIC detectó cuentas de Instagram vendiendo productos falsificados. Se presentó denuncia penal por usurpación de derechos de propiedad industrial (art. 306 CP colombiano) y se solicitó a Meta la baja de las cuentas infractoras mediante procedimiento de notice and takedown.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Empleado que se llevó base de datos de clientes</h4>
-                  <p>Exgerente comercial de empresa en Bogotá copió base de datos de 5.000 clientes al renunciar para montar negocio competidor. Se interpuso denuncia por violación de reserva industrial (art. 308 CP colombiano) y acción civil de competencia desleal ante la SIC con medida cautelar de abstención de uso.</p>
+                  <h4 data-i18n="esp.card6.caso.co.2.title">Empleado que se llevó base de datos de clientes</h4>
+                  <p data-i18n="esp.card6.caso.co.2.desc">Exgerente comercial de empresa en Bogotá copió base de datos de 5.000 clientes al renunciar para montar negocio competidor. Se interpuso denuncia por violación de reserva industrial (art. 308 CP colombiano) y acción civil de competencia desleal ante la SIC con medida cautelar de abstención de uso.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="empresa">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="empresa" data-i18n="esp.card6.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Litigación Civil y Mercantil -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-abogacia">M. Abogacía</span>
+            <span class="especialidad-badge badge-abogacia" data-i18n="esp.card7.badge">M. Abogacía</span>
           </div>
-          <h3>Litigación Civil y Mercantil</h3>
-          <p class="especialidad-materia">Asignaturas: Proceso civil general · Práctica civil especial · Práctica mercantil</p>
-          <p>Resolución de conflictos patrimoniales, contratos y relaciones comerciales.</p>
+          <h3 data-i18n="esp.card7.title">Litigación Civil y Mercantil</h3>
+          <p class="especialidad-materia" data-i18n="esp.card7.materia">Asignaturas: Proceso civil general · Práctica civil especial · Práctica mercantil</p>
+          <p data-i18n="esp.card7.desc">Resolución de conflictos patrimoniales, contratos y relaciones comerciales.</p>
           <ul class="especialidad-casos">
-            <li>Te demandaron por incumplimiento de contrato</li>
-            <li>Cobro de deudas y reclamaciones de cantidad</li>
-            <li>Conflictos entre socios o con proveedores</li>
+            <li data-i18n="esp.card7.li1">Te demandaron por incumplimiento de contrato</li>
+            <li data-i18n="esp.card7.li2">Cobro de deudas y reclamaciones de cantidad</li>
+            <li data-i18n="esp.card7.li3">Conflictos entre socios o con proveedores</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card7.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Demanda por incumplimiento de contrato de arrendamiento comercial</h4>
-                  <p>Arrendatario colombiano con negocio de restauración en Málaga demandado por el propietario tras no poder pagar renta durante la pandemia. Se negoció acuerdo extrajudicial con quita del 40% de la deuda acumulada, evitando desahucio y preservando el negocio.</p>
+                  <h4 data-i18n="esp.card7.caso.es.1.title">Demanda por incumplimiento de contrato de arrendamiento comercial</h4>
+                  <p data-i18n="esp.card7.caso.es.1.desc">Arrendatario colombiano con negocio de restauración en Málaga demandado por el propietario tras no poder pagar renta durante la pandemia. Se negoció acuerdo extrajudicial con quita del 40% de la deuda acumulada, evitando desahucio y preservando el negocio.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Reclamación de cantidad por servicios profesionales impagados</h4>
-                  <p>Diseñador freelance colombiano prestó servicios a empresa española que no pagó factura de 12.000€. Se interpuso procedimiento monitorio (art. 812 LEC) con requerimiento de pago y, ante oposición, se continuó por juicio verbal con condena favorable más intereses y costas.</p>
+                  <h4 data-i18n="esp.card7.caso.es.2.title">Reclamación de cantidad por servicios profesionales impagados</h4>
+                  <p data-i18n="esp.card7.caso.es.2.desc">Diseñador freelance colombiano prestó servicios a empresa española que no pagó factura de 12.000€. Se interpuso procedimiento monitorio (art. 812 LEC) con requerimiento de pago y, ante oposición, se continuó por juicio verbal con condena favorable más intereses y costas.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card7.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Conflicto entre socios de SAS por dilución accionaria</h4>
-                  <p>Socio minoritario de una SAS en Cali fue víctima de capitalización abusiva que diluyó su participación del 40% al 8%. Se demandó la nulidad de la decisión del máximo órgano social (art. 382 Código General del Proceso) y se solicitó medida cautelar de suspensión de los efectos del acta de asamblea.</p>
+                  <h4 data-i18n="esp.card7.caso.co.1.title">Conflicto entre socios de SAS por dilución accionaria</h4>
+                  <p data-i18n="esp.card7.caso.co.1.desc">Socio minoritario de una SAS en Cali fue víctima de capitalización abusiva que diluyó su participación del 40% al 8%. Se demandó la nulidad de la decisión del máximo órgano social (art. 382 Código General del Proceso) y se solicitó medida cautelar de suspensión de los efectos del acta de asamblea.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Cobro ejecutivo de pagaré por préstamo entre particulares</h4>
-                  <p>Colombiano residente en España prestó dinero a familiar en Bogotá con pagaré como respaldo. Ante el impago, se inició proceso ejecutivo singular (art. 422 CGP) con medida de embargo sobre inmueble del deudor, logrando la recuperación total de la suma adeudada más intereses moratorios.</p>
+                  <h4 data-i18n="esp.card7.caso.co.2.title">Cobro ejecutivo de pagaré por préstamo entre particulares</h4>
+                  <p data-i18n="esp.card7.caso.co.2.desc">Colombiano residente en España prestó dinero a familiar en Bogotá con pagaré como respaldo. Ante el impago, se inició proceso ejecutivo singular (art. 422 CGP) con medida de embargo sobre inmueble del deudor, logrando la recuperación total de la suma adeudada más intereses moratorios.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="civil">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="civil" data-i18n="esp.card7.cta">Consultar sobre este tema →</a>
         </div>
 
         <!-- Derecho Laboral -->
         <div class="especialidad-card">
           <div class="especialidad-badge-row">
-            <span class="especialidad-badge badge-abogacia">M. Abogacía</span>
+            <span class="especialidad-badge badge-abogacia" data-i18n="esp.card8.badge">M. Abogacía</span>
           </div>
-          <h3>Derecho Laboral y Social</h3>
-          <p class="especialidad-materia">Asignatura: Jurisdicción y práctica laboral</p>
-          <p>Conflictos entre empleadores y trabajadores, despidos y prestaciones.</p>
+          <h3 data-i18n="esp.card8.title">Derecho Laboral y Social</h3>
+          <p class="especialidad-materia" data-i18n="esp.card8.materia">Asignatura: Jurisdicción y práctica laboral</p>
+          <p data-i18n="esp.card8.desc">Conflictos entre empleadores y trabajadores, despidos y prestaciones.</p>
           <ul class="especialidad-casos">
-            <li>Despido injustificado o sin liquidación</li>
-            <li>Acoso laboral (mobbing)</li>
-            <li>Reclamación de prestaciones sociales</li>
+            <li data-i18n="esp.card8.li1">Despido injustificado o sin liquidación</li>
+            <li data-i18n="esp.card8.li2">Acoso laboral (mobbing)</li>
+            <li data-i18n="esp.card8.li3">Reclamación de prestaciones sociales</li>
           </ul>
           <div class="casos-reales">
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> Casos en España <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇪🇸</span> <span data-i18n="esp.card8.casos.es">Casos en España</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Despido improcedente de trabajadora embarazada</h4>
-                  <p>Colombiana con contrato temporal en hostelería fue despedida al comunicar su embarazo. Se demandó ante el Juzgado de lo Social por despido nulo (art. 55.5 Estatuto de los Trabajadores) con presunción de vulneración de derechos fundamentales, obteniendo readmisión inmediata y salarios de tramitación.</p>
+                  <h4 data-i18n="esp.card8.caso.es.1.title">Despido improcedente de trabajadora embarazada</h4>
+                  <p data-i18n="esp.card8.caso.es.1.desc">Colombiana con contrato temporal en hostelería fue despedida al comunicar su embarazo. Se demandó ante el Juzgado de lo Social por despido nulo (art. 55.5 Estatuto de los Trabajadores) con presunción de vulneración de derechos fundamentales, obteniendo readmisión inmediata y salarios de tramitación.</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Reclamación de horas extras no pagadas en régimen interno</h4>
-                  <p>Empleada de hogar colombiana trabajaba 60 horas semanales pero solo le pagaban 40. Se reclamó ante la jurisdicción social las diferencias salariales de los últimos 12 meses con prueba de registros de jornada vía mensajes de WhatsApp, logrando condena por las horas extras impagadas.</p>
+                  <h4 data-i18n="esp.card8.caso.es.2.title">Reclamación de horas extras no pagadas en régimen interno</h4>
+                  <p data-i18n="esp.card8.caso.es.2.desc">Empleada de hogar colombiana trabajaba 60 horas semanales pero solo le pagaban 40. Se reclamó ante la jurisdicción social las diferencias salariales de los últimos 12 meses con prueba de registros de jornada vía mensajes de WhatsApp, logrando condena por las horas extras impagadas.</p>
                 </div>
               </div>
             </div>
             <div class="casos-jurisdiccion">
-              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> Casos en Colombia <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+              <button class="caso-toggle" aria-expanded="false"><span class="caso-flag">🇨🇴</span> <span data-i18n="esp.card8.casos.co">Casos en Colombia</span> <svg class="caso-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
               <div class="caso-content">
                 <div class="caso-item">
-                  <h4>Despido sin justa causa con liquidación incompleta</h4>
-                  <p>Trabajador con 7 años de antigüedad en empresa de Bogotá fue despedido sin justa causa y recibió liquidación sin incluir prima de servicios ni cesantías del último año. Se demandó ante juez laboral del circuito (art. 64 CST) obteniendo condena por indemnización completa más sanción moratoria (art. 65 CST).</p>
+                  <h4 data-i18n="esp.card8.caso.co.1.title">Despido sin justa causa con liquidación incompleta</h4>
+                  <p data-i18n="esp.card8.caso.co.1.desc">Trabajador con 7 años de antigüedad en empresa de Bogotá fue despedido sin justa causa y recibió liquidación sin incluir prima de servicios ni cesantías del último año. Se demandó ante juez laboral del circuito (art. 64 CST) obteniendo condena por indemnización completa más sanción moratoria (art. 65 CST).</p>
                 </div>
                 <div class="caso-item">
-                  <h4>Acoso laboral (mobbing) con renuncia forzada</h4>
-                  <p>Empleada víctima de acoso laboral sistemático presentó queja ante el Comité de Convivencia Laboral (Ley 1010/2006) sin resultado. Se acompañó la renuncia motivada con solicitud de indemnización por despido indirecto y se presentó queja ante el Ministerio del Trabajo con solicitud de investigación administrativa al empleador.</p>
+                  <h4 data-i18n="esp.card8.caso.co.2.title">Acoso laboral (mobbing) con renuncia forzada</h4>
+                  <p data-i18n="esp.card8.caso.co.2.desc">Empleada víctima de acoso laboral sistemático presentó queja ante el Comité de Convivencia Laboral (Ley 1010/2006) sin resultado. Se acompañó la renuncia motivada con solicitud de indemnización por despido indirecto y se presentó queja ante el Ministerio del Trabajo con solicitud de investigación administrativa al empleador.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#agendar" class="especialidad-cta" data-topic="laboral">Consultar sobre este tema →</a>
+          <a href="#agendar" class="especialidad-cta" data-topic="laboral" data-i18n="esp.card8.cta">Consultar sobre este tema →</a>
         </div>
 
       </div>
@@ -629,35 +639,35 @@
       <div class="services-grid">
         <div class="service-card">
           <div class="service-number">01</div>
-          <h3>Extranjería y Estancia por Estudios</h3>
-          <p>Solicitud de estancia por estudios, prórrogas, modificación a permiso de trabajo, gestión del TIE (Tarjeta de Identidad de Extranjero). Guía paso a paso.</p>
+          <h3 data-i18n="spain.card1.title">Extranjería y Estancia por Estudios</h3>
+          <p data-i18n="spain.card1.desc">Solicitud de estancia por estudios, prórrogas, modificación a permiso de trabajo, gestión del TIE (Tarjeta de Identidad de Extranjero). Guía paso a paso.</p>
           <ul class="service-includes">
-            <li>Visado de estudios inicial</li>
-            <li>Prórrogas de estancia</li>
-            <li>Modificación a permiso de trabajo</li>
-            <li>Gestión del TIE</li>
+            <li data-i18n="spain.card1.li1">Visado de estudios inicial</li>
+            <li data-i18n="spain.card1.li2">Prórrogas de estancia</li>
+            <li data-i18n="spain.card1.li3">Modificación a permiso de trabajo</li>
+            <li data-i18n="spain.card1.li4">Gestión del TIE</li>
           </ul>
         </div>
         <div class="service-card">
           <div class="service-number">02</div>
-          <h3>Orientación Académica</h3>
-          <p>Asesoramiento en elección de másteres, proceso de admisión a universidades españolas, y homologación/equivalencia de títulos ante el Ministerio de Universidades.</p>
+          <h3 data-i18n="spain.card2.title">Orientación Académica</h3>
+          <p data-i18n="spain.card2.desc">Asesoramiento en elección de másteres, proceso de admisión a universidades españolas, y homologación/equivalencia de títulos ante el Ministerio de Universidades.</p>
           <ul class="service-includes">
-            <li>Elección de programa y universidad</li>
-            <li>Proceso de admisión</li>
-            <li>Homologación de títulos</li>
-            <li>Preparación de expedientes</li>
+            <li data-i18n="spain.card2.li1">Elección de programa y universidad</li>
+            <li data-i18n="spain.card2.li2">Proceso de admisión</li>
+            <li data-i18n="spain.card2.li3">Homologación de títulos</li>
+            <li data-i18n="spain.card2.li4">Preparación de expedientes</li>
           </ul>
         </div>
         <div class="service-card">
           <div class="service-number">03</div>
-          <h3>Consultoría de Empresa</h3>
-          <p>Revisión y redacción de contratos mercantiles, compliance penal corporativo para startups y PYMEs, y orientación legal para emprender en España.</p>
+          <h3 data-i18n="spain.card3.title">Consultoría de Empresa</h3>
+          <p data-i18n="spain.card3.desc">Revisión y redacción de contratos mercantiles, compliance penal corporativo para startups y PYMEs, y orientación legal para emprender en España.</p>
           <ul class="service-includes">
-            <li>Contratos mercantiles</li>
-            <li>Compliance penal (prevención)</li>
-            <li>Estructura legal para negocios</li>
-            <li>Acuerdos entre socios</li>
+            <li data-i18n="spain.card3.li1">Contratos mercantiles</li>
+            <li data-i18n="spain.card3.li2">Compliance penal (prevención)</li>
+            <li data-i18n="spain.card3.li3">Estructura legal para negocios</li>
+            <li data-i18n="spain.card3.li4">Acuerdos entre socios</li>
           </ul>
         </div>
       </div>
@@ -675,36 +685,36 @@
       <div class="services-grid">
         <div class="service-card">
           <div class="service-number">01</div>
-          <h3>Consultoría Jurídica Online</h3>
-          <p>Sesión de 45-60 minutos donde evalúo tu caso y emito un concepto jurídico inicial con la estrategia recomendada.</p>
+          <h3 data-i18n="colombia.card1.title">Consultoría Jurídica Online</h3>
+          <p data-i18n="colombia.card1.desc">Sesión de 45-60 minutos donde evalúo tu caso y emito un concepto jurídico inicial con la estrategia recomendada.</p>
           <ul class="service-includes">
-            <li>Derecho Penal</li>
-            <li>Derecho Civil</li>
-            <li>Derecho de Familia</li>
-            <li>Derecho Laboral y Comercial</li>
+            <li data-i18n="colombia.card1.li1">Derecho Penal</li>
+            <li data-i18n="colombia.card1.li2">Derecho Civil</li>
+            <li data-i18n="colombia.card1.li3">Derecho de Familia</li>
+            <li data-i18n="colombia.card1.li4">Derecho Laboral y Comercial</li>
           </ul>
-          <div class="service-price">Desde $120.000 COP / 30€</div>
+          <div class="service-price" data-i18n="colombia.card1.price">Desde $120.000 COP / 30€</div>
         </div>
         <div class="service-card">
           <div class="service-number">02</div>
-          <h3>Redacción de Documentos</h3>
-          <p>Preparación de documentos jurídicos que no requieren representación en audiencia pero sí rigor técnico.</p>
+          <h3 data-i18n="colombia.card2.title">Redacción de Documentos</h3>
+          <p data-i18n="colombia.card2.desc">Preparación de documentos jurídicos que no requieren representación en audiencia pero sí rigor técnico.</p>
           <ul class="service-includes">
-            <li>Derechos de petición</li>
-            <li>Acciones de tutela</li>
-            <li>Contratos y minutas</li>
-            <li>Conceptos jurídicos</li>
+            <li data-i18n="colombia.card2.li1">Derechos de petición</li>
+            <li data-i18n="colombia.card2.li2">Acciones de tutela</li>
+            <li data-i18n="colombia.card2.li3">Contratos y minutas</li>
+            <li data-i18n="colombia.card2.li4">Conceptos jurídicos</li>
           </ul>
         </div>
         <div class="service-card">
           <div class="service-number">03</div>
-          <h3>Representación con Aliados</h3>
-          <p>Para procesos que requieran presencia en audiencias, realizo la valoración estratégica y coordino con abogados litigantes de confianza en Colombia.</p>
+          <h3 data-i18n="colombia.card3.title">Representación con Aliados</h3>
+          <p data-i18n="colombia.card3.desc">Para procesos que requieran presencia en audiencias, realizo la valoración estratégica y coordino con abogados litigantes de confianza en Colombia.</p>
           <ul class="service-includes">
-            <li>Diagnóstico y estrategia por mi parte</li>
-            <li>Litigante aliado en terreno</li>
-            <li>Seguimiento conjunto del caso</li>
-            <li>Transparencia total en honorarios</li>
+            <li data-i18n="colombia.card3.li1">Diagnóstico y estrategia por mi parte</li>
+            <li data-i18n="colombia.card3.li2">Litigante aliado en terreno</li>
+            <li data-i18n="colombia.card3.li3">Seguimiento conjunto del caso</li>
+            <li data-i18n="colombia.card3.li4">Transparencia total en honorarios</li>
           </ul>
         </div>
       </div>
@@ -725,8 +735,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
           <div class="step-number">1</div>
-          <h3>Reservas tu cita</h3>
-          <p>Eliges fecha y hora en mi calendario. Realizas el pago de la consulta (30-50€ o equivalente en COP) y recibes confirmación inmediata.</p>
+          <h3 data-i18n="process.step1.title">Reservas tu cita</h3>
+          <p data-i18n="process.step1.desc">Eliges fecha y hora en mi calendario. Realizas el pago de la consulta (30-50€ o equivalente en COP) y recibes confirmación inmediata.</p>
         </div>
         <div class="step-connector">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -736,8 +746,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           </div>
           <div class="step-number">2</div>
-          <h3>Videollamada</h3>
-          <p>Sesión de 45-60 minutos donde analizamos tu caso. Te doy un diagnóstico claro, opciones disponibles y la estrategia recomendada.</p>
+          <h3 data-i18n="process.step2.title">Videollamada</h3>
+          <p data-i18n="process.step2.desc">Sesión de 45-60 minutos donde analizamos tu caso. Te doy un diagnóstico claro, opciones disponibles y la estrategia recomendada.</p>
         </div>
         <div class="step-connector">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -747,8 +757,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <div class="step-number">3</div>
-          <h3>Plan de acción</h3>
-          <p>Recibes un resumen escrito con el concepto jurídico, próximos pasos y presupuesto si decides continuar con la gestión completa.</p>
+          <h3 data-i18n="process.step3.title">Plan de acción</h3>
+          <p data-i18n="process.step3.desc">Recibes un resumen escrito con el concepto jurídico, próximos pasos y presupuesto si decides continuar con la gestión completa.</p>
         </div>
       </div>
     </div>
@@ -764,26 +774,26 @@
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"Me ayudó con todo el proceso de mi TIE cuando llegué a España a estudiar. Claro, rápido y sin complicaciones. Muy recomendado."</blockquote>
+          <blockquote data-i18n="testimonials.t1.text">"Me ayudó con todo el proceso de mi TIE cuando llegué a España a estudiar. Claro, rápido y sin complicaciones. Muy recomendado."</blockquote>
           <div class="testimonial-author">
-            <strong>Camila R.</strong>
-            <span>Estudiante de máster · Málaga</span>
+            <strong data-i18n="testimonials.t1.name">Camila R.</strong>
+            <span data-i18n="testimonials.t1.role">Estudiante de máster · Málaga</span>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"Necesitaba una tutela urgente en Colombia y a pesar de estar en España me la gestionó en tiempo récord. Excelente concepto jurídico."</blockquote>
+          <blockquote data-i18n="testimonials.t2.text">"Necesitaba una tutela urgente en Colombia y a pesar de estar en España me la gestionó en tiempo récord. Excelente concepto jurídico."</blockquote>
           <div class="testimonial-author">
-            <strong>Andrés M.</strong>
-            <span>Profesional colombiano · Madrid</span>
+            <strong data-i18n="testimonials.t2.name">Andrés M.</strong>
+            <span data-i18n="testimonials.t2.role">Profesional colombiano · Madrid</span>
           </div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"Nos asesoró en la revisión de contratos para nuestra startup. Entiende la realidad de emprender y da soluciones prácticas, no solo teoría."</blockquote>
+          <blockquote data-i18n="testimonials.t3.text">"Nos asesoró en la revisión de contratos para nuestra startup. Entiende la realidad de emprender y da soluciones prácticas, no solo teoría."</blockquote>
           <div class="testimonial-author">
-            <strong>Laura & Diego</strong>
-            <span>Cofundadores · Valencia</span>
+            <strong data-i18n="testimonials.t3.name">Laura & Diego</strong>
+            <span data-i18n="testimonials.t3.role">Cofundadores · Valencia</span>
           </div>
         </div>
       </div>
@@ -794,62 +804,62 @@
   <section class="section section-alt" id="faq">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">FAQ</span>
+        <span class="section-label" data-i18n="faq.label">FAQ</span>
         <h2 data-i18n="faq.title">Preguntas Frecuentes</h2>
       </div>
       <div class="faq-container">
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿La primera consulta tiene costo?</span>
+            <span data-i18n="faq.q1">¿La primera consulta tiene costo?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Sí. Mi tiempo de análisis tiene valor y es lo que te garantiza una orientación seria y profesional desde el primer momento. La consulta es de 45-60 minutos por videollamada, con un costo de 30€ a 50€ (o equivalente en COP), dependiendo de la complejidad del tema.</p>
+            <p data-i18n="faq.a1">Sí. Mi tiempo de análisis tiene valor y es lo que te garantiza una orientación seria y profesional desde el primer momento. La consulta es de 45-60 minutos por videollamada, con un costo de 30€ a 50€ (o equivalente en COP), dependiendo de la complejidad del tema.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿Puedes ejercer como abogado en España?</span>
+            <span data-i18n="faq.q2">¿Puedes ejercer como abogado en España?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Mis servicios en España se prestan a título de consultoría jurídica y orientación legal privada. Para representación ante tribunales españoles, trabajo con abogados colegiados en España cuando sea necesario. En Colombia sí cuento con Tarjeta Profesional activa para ejercicio pleno.</p>
+            <p data-i18n="faq.a2">Mis servicios en España se prestan a título de consultoría jurídica y orientación legal privada. Para representación ante tribunales españoles, trabajo con abogados colegiados en España cuando sea necesario. En Colombia sí cuento con Tarjeta Profesional activa para ejercicio pleno.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿Cómo funciona la asesoría para Colombia si estás en España?</span>
+            <span data-i18n="faq.q3">¿Cómo funciona la asesoría para Colombia si estás en España?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Todo el análisis, diagnóstico, estrategia y documentos los elaboro yo directamente. Si tu caso requiere presencia en audiencias en Colombia, coordino con abogados litigantes de confianza que ejecutan en terreno bajo mi dirección estratégica. Siempre con transparencia total en los honorarios.</p>
+            <p data-i18n="faq.a3">Todo el análisis, diagnóstico, estrategia y documentos los elaboro yo directamente. Si tu caso requiere presencia en audiencias en Colombia, coordino con abogados litigantes de confianza que ejecutan en terreno bajo mi dirección estratégica. Siempre con transparencia total en los honorarios.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿Qué métodos de pago aceptas?</span>
+            <span data-i18n="faq.q4">¿Qué métodos de pago aceptas?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Acepto Bizum, transferencia bancaria (España), tarjeta de crédito/débito, y para Colombia: Nequi, Daviplata o transferencia bancaria colombiana. El pago se realiza antes de la consulta para confirmar la reserva.</p>
+            <p data-i18n="faq.a4">Acepto Bizum, transferencia bancaria (España), tarjeta de crédito/débito, y para Colombia: Nequi, Daviplata o transferencia bancaria colombiana. El pago se realiza antes de la consulta para confirmar la reserva.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿Atiendes fines de semana?</span>
+            <span data-i18n="faq.q5">¿Atiendes fines de semana?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Mi horario regular es de lunes a viernes de 9:00 a 19:00 (hora española). Para clientes en Colombia, ajusto horarios según la diferencia horaria. Casos urgentes se evalúan individualmente.</p>
+            <p data-i18n="faq.a5">Mi horario regular es de lunes a viernes de 9:00 a 19:00 (hora española). Para clientes en Colombia, ajusto horarios según la diferencia horaria. Casos urgentes se evalúan individualmente.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿Qué recibo después de la consulta?</span>
+            <span data-i18n="faq.q6">¿Qué recibo después de la consulta?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Dentro de las 48 horas siguientes a la videollamada recibes un resumen escrito con: diagnóstico del caso, opciones legales disponibles, estrategia recomendada, y presupuesto estimado si decides avanzar con la gestión completa.</p>
+            <p data-i18n="faq.a6">Dentro de las 48 horas siguientes a la videollamada recibes un resumen escrito con: diagnóstico del caso, opciones legales disponibles, estrategia recomendada, y presupuesto estimado si decides avanzar con la gestión completa.</p>
           </div>
         </div>
       </div>
@@ -881,38 +891,38 @@
           <div class="calendar-days" id="calDays"></div>
         </div>
         <div class="booking-slots">
-          <h4 id="selectedDateLabel">Selecciona una fecha</h4>
+          <h4 id="selectedDateLabel" data-i18n="booking.selectdate">Selecciona una fecha</h4>
           <div class="time-slots" id="timeSlots">
-            <p class="slot-placeholder">Elige un día laborable en el calendario.</p>
+            <p class="slot-placeholder" data-i18n="booking.placeholder">Elige un día laborable en el calendario.</p>
           </div>
           <div class="booking-confirm" id="bookingConfirm" style="display:none;">
             <div class="form-group">
-              <label for="bookName">Nombre completo</label>
-              <input type="text" id="bookName" placeholder="Tu nombre">
+              <label for="bookName" data-i18n="booking.name.label">Nombre completo</label>
+              <input type="text" id="bookName" placeholder="Tu nombre" data-i18n-placeholder="booking.name.placeholder">
             </div>
             <div class="form-group">
-              <label for="bookEmail">Email</label>
-              <input type="email" id="bookEmail" placeholder="tu@email.com">
+              <label for="bookEmail" data-i18n="booking.email.label">Email</label>
+              <input type="email" id="bookEmail" placeholder="tu@email.com" data-i18n-placeholder="booking.email.placeholder">
             </div>
             <div class="form-group">
-              <label for="bookTopic">Tema de consulta</label>
+              <label for="bookTopic" data-i18n="booking.topic.label">Tema de consulta</label>
               <select id="bookTopic">
-                <option value="">Selecciona...</option>
-                <option value="extranjeria">Extranjería / TIE</option>
-                <option value="academica">Orientación Académica</option>
-                <option value="empresa">Empresa / Contratos</option>
-                <option value="penal">Derecho Penal (COL)</option>
-                <option value="civil">Derecho Civil (COL)</option>
-                <option value="laboral">Derecho Laboral (COL)</option>
-                <option value="familia">Derecho de Familia (COL)</option>
-                <option value="otro">Otro</option>
+                <option value="" data-i18n="booking.topic.default">Selecciona...</option>
+                <option value="extranjeria" data-i18n="booking.topic.extranjeria">Extranjería / TIE</option>
+                <option value="academica" data-i18n="booking.topic.academica">Orientación Académica</option>
+                <option value="empresa" data-i18n="booking.topic.empresa">Empresa / Contratos</option>
+                <option value="penal" data-i18n="booking.topic.penal">Derecho Penal (COL)</option>
+                <option value="civil" data-i18n="booking.topic.civil">Derecho Civil (COL)</option>
+                <option value="laboral" data-i18n="booking.topic.laboral">Derecho Laboral (COL)</option>
+                <option value="familia" data-i18n="booking.topic.familia">Derecho de Familia (COL)</option>
+                <option value="otro" data-i18n="booking.topic.otro">Otro</option>
               </select>
             </div>
             <button class="btn-primary btn-book" id="confirmBooking">
-              Confirmar Reserva
+              <span data-i18n="booking.confirm">Confirmar Reserva</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
-            <p class="booking-note">Recibirás un email con el enlace de pago y los datos de la videollamada.</p>
+            <p class="booking-note" data-i18n="booking.note">Recibirás un email con el enlace de pago y los datos de la videollamada.</p>
           </div>
         </div>
       </div>
@@ -928,7 +938,7 @@
         <div class="cta-buttons">
           <a href="https://wa.me/34600000000" class="btn-whatsapp" target="_blank">
             <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Escribir por WhatsApp
+            <span data-i18n="cta.whatsapp">Escribir por WhatsApp</span>
           </a>
           <a href="mailto:contacto@felipesalinas.legal" class="btn-secondary">
             contacto@felipesalinas.legal
@@ -944,39 +954,39 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="nav-logo">
-            <span class="logo-mark">FS</span>
-            <span class="logo-text">Felipe Salinas</span>
+            <img src="img/logo-navbar.svg" alt="CapLaw" class="logo-img" width="40" height="40">
+            <span class="logo-text">CapLaw</span>
           </a>
-          <p>Consultoría jurídica online Colombia-España. Formación de posgrado en la Universidad de Málaga.</p>
+          <p data-i18n="footer.desc">Consultoría jurídica online Colombia-España. Formación de posgrado en la Universidad de Málaga.</p>
         </div>
         <div>
-          <h4>Servicios España</h4>
+          <h4 data-i18n="footer.spain.title">Servicios España</h4>
           <ul class="footer-links">
-            <li><a href="#servicios-espana">Extranjería y TIE</a></li>
-            <li><a href="#servicios-espana">Orientación Académica</a></li>
-            <li><a href="#servicios-espana">Empresa y Contratos</a></li>
+            <li><a href="#servicios-espana" data-i18n="footer.spain.link1">Extranjería y TIE</a></li>
+            <li><a href="#servicios-espana" data-i18n="footer.spain.link2">Orientación Académica</a></li>
+            <li><a href="#servicios-espana" data-i18n="footer.spain.link3">Empresa y Contratos</a></li>
           </ul>
         </div>
         <div>
-          <h4>Servicios Colombia</h4>
+          <h4 data-i18n="footer.colombia.title">Servicios Colombia</h4>
           <ul class="footer-links">
-            <li><a href="#servicios-colombia">Consultoría Online</a></li>
-            <li><a href="#servicios-colombia">Tutelas y Documentos</a></li>
-            <li><a href="#servicios-colombia">Representación</a></li>
+            <li><a href="#servicios-colombia" data-i18n="footer.colombia.link1">Consultoría Online</a></li>
+            <li><a href="#servicios-colombia" data-i18n="footer.colombia.link2">Tutelas y Documentos</a></li>
+            <li><a href="#servicios-colombia" data-i18n="footer.colombia.link3">Representación</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contacto</h4>
+          <h4 data-i18n="footer.contact.title">Contacto</h4>
           <ul class="footer-links">
-            <li><a href="https://wa.me/34600000000">WhatsApp</a></li>
-            <li><a href="mailto:contacto@felipesalinas.legal">Email</a></li>
-            <li><a href="#agendar">Agendar Cita</a></li>
+            <li><a href="https://wa.me/34600000000" data-i18n="footer.contact.link1">WhatsApp</a></li>
+            <li><a href="mailto:contacto@felipesalinas.legal" data-i18n="footer.contact.link2">Email</a></li>
+            <li><a href="#agendar" data-i18n="footer.contact.link3">Agendar Cita</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Felipe Salinas. Todos los derechos reservados.</p>
-        <p class="footer-disclaimer">Los servicios en España se prestan a título de consultoría jurídica y orientación legal privada. Para Colombia, se cuenta con Tarjeta Profesional de Abogado activa.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Felipe Salinas. Todos los derechos reservados.</p>
+        <p class="footer-disclaimer" data-i18n="footer.disclaimer">Los servicios en España se prestan a título de consultoría jurídica y orientación legal privada. Para Colombia, se cuenta con Tarjeta Profesional de Abogado activa.</p>
       </div>
     </div>
   </footer>
@@ -986,6 +996,7 @@
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
